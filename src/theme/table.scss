@@ -1,0 +1,26 @@
+.table-p{
+  padding: 22px 25px;
+  b{
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 6px;
+  }
+
+  &.one-row{
+    padding-right: 0;
+    padding-left: 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    .col{
+      min-width: 110px;
+      padding: 0;
+      +.col{
+        margin-left: 20px;
+      }
+    }
+    .send-m-table__value{
+      white-space: nowrap;
+      margin-top: 3px;
+    }
+  }
+}

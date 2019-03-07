@@ -1,0 +1,24 @@
+.item-type{
+  padding:10px 20px!important;
+  .col{
+    width: auto;
+    flex: initial;
+  }
+}
+
+.item-status{
+  font-size: 12px;
+  &.complited{
+    color:#6BD186;
+  }
+  &.canceled{
+    color:#E63E3E
+  }
+  &.saved{
+    color: #7794E3;
+  }
+  &.in.progress{
+    color: #33C2E5;
+  }
+}
+

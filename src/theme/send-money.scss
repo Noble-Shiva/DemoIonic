@@ -1,0 +1,168 @@
+.send-m-table{
+  text-align: left;
+  .row{
+    padding: 20px 15px;
+  }
+  .col{
+    padding:10px 5px;
+  }
+  &__top{
+    background-color: rgba(231,231,239,.3);
+    .send-m-table__value{
+      font-size: 24px;
+      line-height: 29px;
+      sup{
+        font-size: 14px;
+      }
+    }
+  }
+  &__value{
+    font-size: 14px;
+    color: #4F4B6B;
+    font-weight: 700;
+    line-height: 17px;
+    padding-top: 5px;
+    b{
+      font-weight: 900;
+    }
+    img{
+      margin-right: 8px;
+      height: 20px;
+      width: auto;
+      border-radius: 100%;
+      display: block;
+    }
+    &.flex-row{
+      align-items: center;
+    }
+  }
+
+  .status-complete{
+    color: #6BD186;
+  }
+  .status-pending{
+    color: #ACB0C7;
+  }
+  .status-error{
+    color: #E63E3E;
+  }
+  .status-checking{
+    color: #33C2E5;
+  }
+
+  [name="icon-card_pay"]{
+    margin-right: 8px;
+  }
+}
+
+.transaction-items{
+  ion-item{
+    color: #4F4B6B
+  }
+  ion-label{
+    padding: 20px;
+    margin: 0;
+  }
+  ion-col{
+    padding:5px 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+    &.empty{
+      justify-content: center;
+      &::before{
+        content: '-';
+      }
+    }
+  }
+  ion-row{
+    margin: -5px;
+  }
+  .item{
+    &-cash-name{
+      color: #9A96B8;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    &-name{
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      line-height: 12px;
+      &__img{
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+        margin-right: 10px;
+      }
+      &.icon-has{
+        ion-icon{
+          margin-right: 5px;
+        }
+      }
+    }
+    &-date{
+      font-size: 10px;
+      span{
+        color: #9A96B8;
+      }
+    }
+    &-card{
+      font-size: 12px;
+    }
+    &-money{
+      text-align: center;
+      font-weight: 700;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      [name="icon-up"]{
+        font-size: 10px;
+        color:#33C2E5;
+        font-weight: 700;
+        margin-right: 4px;
+      }
+      [name="icon-down"]{
+        font-size: 10px;
+        color:#6BD186;
+        font-weight: 700;
+        margin-right: 4px;
+      }
+    }
+    &-status{
+      font-weight: 700;
+      font-size: 14px;
+      &.delivered{
+        color: #6BD186;
+      }
+      &.error{
+        color: #E63E3E;
+      }
+      &.checking{
+        color: #33C2E5;
+      }
+    }
+  }
+}
+
+.icon-has{
+  [name="icon-cash"]{
+    font-size: 13px;
+  }
+  [name="icon-bank"]{
+    font-size: 17px;
+  }
+  [name="icon-electro"]{
+    font-size: 16px;
+  }
+  [name="icon-card_pay"]{
+    font-size: 14px;
+  }
+  [name="icon-phone_reload"]{
+    font-size: 23px;
+  }
+  [name="icon-water"]{
+    font-size: 14px;
+  }
+}

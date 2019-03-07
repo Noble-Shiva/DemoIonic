@@ -7,8 +7,74 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Username</ion-label>
+      <ion-input type="text" [(ngModel)]='username'></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password" [(ngModel)]='password'></ion-input>
+    </ion-item>
+  
+  </ion-list>
+  
+  <div padding>
+    <button ion-button block (click)='encodeData()'>Encode</button>
+    <button ion-button block (click)='decodeData()'>Decode</button>
+  </div>
+
+  
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Decoded Username</ion-label>
+      <ion-input type="text" [(ngModel)]='dusername'></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Decoded Password</ion-label>
+      <ion-input type="text" [(ngModel)]='dpassword'></ion-input>
+    </ion-item>
+  
+  </ion-list>
+  
+  <input type="file" id="avatar" (change)="onFileChange($event)" #fileInput>
+
+  <div padding>
+    <button ion-button block (click)='openFile()'>Pick File</button>
+    <!-- <button ion-button block (click)='decodeData()'>Decode</button> -->
+  </div>
+
+  <!-- <ion-card class="cr-edit-card">
+    <ion-card-header>
+      Header
+    </ion-card-header>
+    <ion-card-content>
+      The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+    </ion-card-content>
+  </ion-card>
+
+  <form action="">
+    <ion-list>
+      <ion-list-header>
+        Action
+      </ion-list-header>
+      <div class="form-list select-type">
+        <ion-item>Terminator II</ion-item>
+        <ion-item>The Empire Strikes Back</ion-item>
+        <ion-item>Blade Runner</ion-item>
+      </div>
+
+    </ion-list>
+  </form> -->
+  
+  <button ion-button class="btn btn-red" (click)="convertToFile()">
+    Convert to File
+  </button>
+  
 </ion-content>

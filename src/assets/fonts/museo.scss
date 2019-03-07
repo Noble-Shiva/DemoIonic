@@ -1,0 +1,27 @@
+// Museo Font
+// Google
+// Apache License, version 2.0
+// http://www.apache.org/licenses/LICENSE-2.0.html
+
+$roboto-font-path: $font-path !default;
+
+@font-face {
+  font-family: "Museo";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Museo Light"), local("Roboto-Light"),  url("#{$roboto-font-path}/museo-sans-cyrl-300.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Museo";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Museo"), local("Roboto-Regular"), url("#{$roboto-font-path}/museo-sans-cyrl-500.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Museo";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Museo Bold"), local("Roboto-Bold"), url("#{$roboto-font-path}/museo-sans-cyrl-700.otf") format("opentype");
+}

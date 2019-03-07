@@ -1,0 +1,134 @@
+@media (max-width: 340px){
+  .toolbar-title-md,
+  .toolbar-title-ios{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 360px){
+  .menu-list__top .menu-btn{
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  ion-menu .scroll-content{
+    padding-left: 20px;
+  }
+
+  .transaction-items .item-status,
+  .transaction-items .item-money{
+    font-size: 12px;
+  }
+
+  page-dashboard-tabs .tabs .tab-button-icon{
+    font-size: 16px!important;
+  }
+
+  .currency .choose-currency__inner img{
+    max-width: 20px!important;
+  }
+  .currency .choose-currency__inner p{
+    font-size: 12px!important;
+  }
+
+  page-send .has-locked [name="icon-lock"]{
+    font-size: 12px;
+  }
+
+  page-send .currency ion-input input,
+  page-send .currency .input-pseudo{
+    padding-right: 15px!important;
+  }
+
+  page-send .currency .input-pseudo,
+  page-send .currency ion-input input{
+    max-width: 125px;
+    min-width: 125px!important;
+    width: 125px!important;
+  }
+  page-send .currency .choose-currency{
+    max-width: calc(100% - 120px)!important;
+  }
+
+  page-send .item-type{
+    .input__row{
+      flex-wrap: wrap;
+    }
+    .col{
+      width: 50%;
+    }
+  }
+
+  .form-list .input-has-value ion-label, .form-list .input-has-focus ion-label,
+  .form-list .input-has-value[detail-push] ion-label, .form-list .input-has-focus[detail-push] ion-label{
+    font-size: 10px;
+    max-width: 115px;
+    line-height: 12px;
+  }
+
+  .input-pseudo{
+    padding-right: 15px;
+    max-width: calc(100% - 115px);
+  }
+  .form-list textarea, .form-list ion-datetime, .form-list input{
+    padding-right: 115px;
+  }
+
+  .fees-section p{
+    font-size: 12px!important;
+  }
+
+  .list-group .item-block{
+    font-size: 14px;
+  }
+
+  .item-btn-type ion-label{
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .send-m-table__top .send-m-table__value{
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .send-m-table__value{
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .send-m-table .small-title{
+    margin-right: 0;
+    padding-right: 0;
+    max-width: none;
+  }
+
+  .send-m-table__top .send-m-table__value sup{
+    font-size: 12px;
+  }
+
+  .cr-edit-card__number input[type="number"], .cr-edit-card__number input[type="text"], .cr-edit-card__number input[type="tel"]{
+    font-size: 16px;
+    &::placeholder{
+      font-size: 16px!important;
+    }
+  }
+
+  .radio-row ion-label{
+    white-space: normal
+  }
+  .segment-button{
+    font-size: 12px!important;
+  }
+
+  .terms-section{
+    height: 57px!important;
+    padding-top: 18px!important;
+    padding-bottom: 18px!important;
+  }
+
+  .radio-row,
+  .form-list ion-datetime:not(.datetime-md){
+    height: 57px!important;
+  }
+}

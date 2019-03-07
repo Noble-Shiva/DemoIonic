@@ -1,0 +1,259 @@
+.block-section{
+  position: relative;
+
+  &__title{
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 10%;
+    margin-bottom: 6%;
+  }
+
+  &__title.mod{
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  [name="icon-up"]{
+    color: #20D0A1;
+  }
+
+  [name="icon-down"]{
+    color: #CE2626;
+  }
+}
+
+.full-height{
+  .login-type__section{
+    height: 100%;
+  }
+}
+
+.sections-page,
+.login-type__section{
+  position: relative;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  .image{
+    //margin-bottom: 6%;
+    margin-bottom: 16px;
+    height: 17%;
+    max-height: 114px;
+    img{
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      height: 100%;
+      max-height: 100%;
+    }
+  }
+  .description{
+    margin-bottom: 25px;
+  }
+  .other-account{
+    margin-top: 3%;
+    p{
+      font-size: 12px;
+    }
+  }
+
+  .ion-logo-twitter{
+    color: #55CDEE;
+  }
+  [name="icon-facebook_ic"]{
+    color: #4266B2;
+  }
+  .ion-logo-googleplus{
+    color: #E63E3E;
+  }
+
+  h2{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    max-width: 240px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    //margin-top: 16px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+}
+
+.description {
+  + h2{
+    margin-top: -10px!important;
+    margin-bottom: 16px;
+  }
+  +.segment{
+    margin-top: 3px;
+  }
+}
+
+.centered{
+  justify-content: center;
+}
+
+.has-padding-b{
+  padding-bottom: 26px;
+  position: relative;
+  min-height: 100%;
+}
+
+.list-group{
+  border-radius: 6px;
+  overflow: hidden;
+
+  .item-block{
+    height: 70px;
+    padding-left: 20px!important;
+    font-size: 16px;
+    color: #4F4B6B;
+    &+.item-block{
+      border-top: 1px solid #EBEAF1;
+    }
+    @media (max-width:374px){
+      height: 30px;
+    }
+  }
+
+  .item-inner{
+    border:none!important;
+    background-image: none!important;
+  }
+
+  &.no-group{
+    button:first-of-type{
+      border-top:none;
+    }
+    button:last-of-type{
+      border-bottom: none;
+    }
+  }
+}
+
+.white-section{
+  border-radius: 6px;
+  background-color: white;
+  overflow: hidden;
+  //margin-bottom: 1.5vh;
+  margin-bottom: 3%;
+
+  ion-label{
+    margin: 0!important;
+  }
+
+  .item-block{
+    padding-left: 0;
+    border: none!important;
+    box-shadow: none!important;
+    .item-inner{
+      padding-right: 0px;
+      border-bottom: 1px solid #EBEAF1!important;
+      box-shadow: none!important;
+    }
+    &:last-of-type .item-inner{
+      border-bottom: 0!important;
+    }
+  }
+}
+
+
+.post-type{
+  a{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #7E7A9C;
+    margin-top: 5px;
+    margin-bottom: 15px
+  }
+  h3{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+    text-transform: uppercase;
+    color: #4F4B6B;
+  }
+}
+
+.before-remove-animation{
+  transition: all 300ms cubic-bezier(.48,.02,1,.01);
+  transform: translateX(120%);
+  opacity: .5;
+}
+
+.img-section{
+  img{
+    width: 100%;
+
+  }
+  [name="icon-hide"]:before{
+    color: white;
+  }
+}
+
+.fees-section{
+  ion-item{
+    background-color: rgba(231,231,239,0.3);
+  }
+  .fees-total{
+    height: 70px;
+    position: relative;
+    @media screen and (max-width:374px){
+      height: 50px;
+    }
+
+    [name="icon-Ar_Down"]{
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translate3d(0,-50%,0);
+      font-size: 6px;
+      color: #9A96B8;
+      transition: all 200ms ease;
+      z-index: 1;
+    }
+    &.open{
+      [name="icon-Ar_Down"]{
+        transform:translate3d(0,-50%,0) rotate(180deg);
+        color: #E63E3E;
+      }
+    }
+  }
+
+  p{
+    color: #4F4B6B;
+    font-size: 16px;
+    font-weight: 700;
+    span{
+      font-weight: 500;
+      color: #9A96B8;
+    }
+  }
+  .col {
+    ion-label{
+      white-space: normal;
+      position: static;
+      transform: translate(0);
+      max-width: 100%!important;
+      margin-right: 0;
+      padding-right: 0;
+    }
+    p {
+      white-space: nowrap;
+    }
+  }
+}
